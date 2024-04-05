@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Alert</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Alert</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-button id="present-alert">Haz clic</ion-button>
+                <ion-alert trigger="present-alert" header="Prueba" subHeader="Ejecución de prueba" message="Si se puede ver este mensaje, la alerta funciona" [buttons]="alertButtons"></ion-alert>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
